@@ -38,4 +38,7 @@ result.push(capitalizedElement)
 
 
 
-
+export function aufgabe03(args) {
+  const input = args
+  const result = []
+}
