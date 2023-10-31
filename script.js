@@ -66,4 +66,9 @@ else if(currentElement === `E`) {
 }
 
 
-
+export function aufgabe04 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
