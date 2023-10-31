@@ -44,6 +44,12 @@ export function aufgabe03(args) {
 
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
+
+//wenn es ein e ist, wird eine 1 aufgeschrieben.
+if(currentElement === `e`){
+  result.push("1")
+}
+
   
 
 
