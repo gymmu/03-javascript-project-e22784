@@ -69,6 +69,20 @@ else if(currentElement === `E`) {
 export function aufgabe04 (args) {
   const input = args
   const result = []
+  //den counter auf 0 setzen.
+  let count = 0
   
-  return result.join("")
+
+for (let i = 0; i < input.length; i++) 
+ { const currentElement = input[i]
 }
+
+ //es werden die leerschläge gezählt
+ if (currentElement === ` `) {
+  count = count + 1 
+}
+
+return count
+}
+
+
