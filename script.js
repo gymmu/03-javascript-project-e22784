@@ -89,6 +89,29 @@ return count
 export function aufgabe05 (args) {
   const input = args
   const result = []
+  let capitalLetters = 0
+
   
-  return result.join("")
+  for (let i = 0; i < input.length; i++) 
+ { const currentElement = input[i]
+  if (currentElement === `.`){
+    //bei Punkten passiert nichts.
+  }
+  else if (currentElement === ` `){
+    //ignoriert Leerschläge
+  }
+// prüfen ob mein Zeichen das gleiche ist wie wenn mein Zeichen gross geschrieben ist.
+ else if(currentElement === currentElement.toUpperCase()) {
+  capitalLetters++
+ }
+
+
+ }
+// wenn es mehr als 0 Grossbuchstaben hat, wird true angezeigt ansonsten false. 
+ if (capitalLetters > 0) {
+  return true
+ } else {
+  return false
+ }
+
 }
