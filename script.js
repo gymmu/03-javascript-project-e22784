@@ -41,20 +41,29 @@ result.push(capitalizedElement)
 export function aufgabe03(args) {
   const input = args
   const result = []
+  let count = 0
 
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
+  
 
-//wenn es ein e ist, wird eine 1 aufgeschrieben.
+//wenn es ein "e" ist wird 1 gezählt.
 if(currentElement === `e`){
-  result.push("1")
+  count = count + 1
 }
 
-  
+//wenn es ein "E" ist wird 1 gezählt.
+else if(currentElement === `E`) {
+  count = count + 1
+}
 
 
 
   }
-  return result.join("")
+
+  return count
 
 }
+
+
+
