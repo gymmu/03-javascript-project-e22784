@@ -86,3 +86,9 @@ return count
 }
 
 
+export function aufgabe05 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
