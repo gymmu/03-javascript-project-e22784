@@ -104,6 +104,10 @@ export function aufgabe05 (args) {
  else if(currentElement === currentElement.toUpperCase()) {
   capitalLetters++
  }
+//TODO --> es funktioniert nicht!!!
+ else if( currentElement !== currentElement.toLowerCase()) {
+  capitalLetters ++
+ }
 
 
  }
@@ -117,10 +121,25 @@ export function aufgabe05 (args) {
 }
 
 
-
+//TODO --> es funktioniert nicht!!!
 export function aufgabe06 (args) {
   const input = args
   const result = []
-  
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+}
+
+
+//Wandle das aktuelle Element in einen Grossbuchstaben um, um nacher zu schauen welche 
+const capitalizedElement = currentElement.toUpperCase()
+//Hänge den Grossbuchstaben an das Resultat an
+result.push(capitalizedElement)
+
+
+
+
   return result.join("")
 }
+
+
