@@ -120,27 +120,26 @@ export function aufgabe05 (args) {
 
 }
 
-
-//TODO --> es funktioniert nicht!!!
+//TODO ---> es funktioniert nicht
 export function aufgabe06 (args) {
   const input = args
   const result = []
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //das Element in einen ascii code umwandeln
+    currentElement = currentElement.charCodeAt(0)
+    //wenn der ascii code dem eines Sonderzeichen entspricht, wird true wiedergegeben.(< zeichen rausgenommen weil es als Fehler markiert ist.)
+    if (currentElement.charCodeAt(0) === 33 >62 )
+    return true
+   }
+  
 
-for (let i = 0; i < input.length; i++) {
-  const currentElement = input[i]
+  return false
 }
 
 
-//Wandle das aktuelle Element in einen Grossbuchstaben um, um nacher zu schauen welche 
-const capitalizedElement = currentElement.toUpperCase()
-//Hänge den Grossbuchstaben an das Resultat an
-result.push(capitalizedElement)
 
-
-
-
-  return result.join("")
-}
 
 
 
