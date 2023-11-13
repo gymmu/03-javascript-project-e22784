@@ -204,16 +204,19 @@ for (let i = 0; i < input.length; i++) {
 
  export function aufgabe13 (args) {
   const input = args
- 
+ let pos = -1
   
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
-  //das gleiche wie Aufgabe 12 einfach, dass esrückwärts ausgelesen werden soll.
-  Array. reverse()
-  if(currentElement === "e")
-  return i
+  // rückwärts auslesen wäre --> for (let i = input.length -1; i>= 0; i--)
+  
+  //wenn ein "e" vorkommt wird es gespeichert. Wenn alle Zeichen durch sind wird das letze gespeicherte e (posotion)angezeigt.
+  if(currentElement === "e"){
+  pos = i
+  }
+  
 }
  
-return -1
+return pos
   
  }
