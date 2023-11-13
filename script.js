@@ -167,7 +167,7 @@ let len = 0
  export function aufgabe11 (args) {
   const input = args
   let ascii = null 
-
+// wenn die eingabe mehr als ein Zeichen lang ist wird einfach nur 0 wiedergegeben.
   if (input.length > 1) {
     return null
   }
@@ -181,4 +181,22 @@ for (let i = 0; i < input.length; i++) {
 }
   // wenn es kein ZEichen mehr gibt null zurückgeben, weil der Test es so verlangt
   return null
+ }
+
+
+ export function aufgabe12 (args) {
+  const input = args
+  
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  //wenn das Zeichen ein "e" ist wird die Position angegeben.
+  if (currentElement === "e") {
+    //andere Form anstatt pos(position)
+    return i
+  }
+  
+}
+//wenn kein "e" vorhanden ist, wird -1 zurückgegeben
+  return -1
  }
