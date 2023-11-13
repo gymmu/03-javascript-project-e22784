@@ -143,3 +143,25 @@ result.push(capitalizedElement)
 }
 
 
+
+export function aufgabe09 (args)  {
+  const input = args
+
+  //schleifendings
+  for (let i = 0; i < input.length; i++) {
+    {
+      //wird bei jedem zeichen 1 addiert. Es wäre auch "len++ "möglich.
+      len === len + 1
+    }
+    //wenn 6 zeichen gezählt wurden, wird true wiedergegeben, ansonsten immer false.
+ if(len === 6){
+  return true
+ } else {
+  return false
+ }
+    
+  }
+  
+  return result.join("")
+ }
+
