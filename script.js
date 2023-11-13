@@ -168,6 +168,9 @@ let len = 0
   const input = args
   let ascii = null 
 
+  if (input.length > 1) {
+    return null
+  }
 for (let i = 0; i < input.length; i++) {
   const currentElement = input[i]
   //muss man halt einfach wissen
