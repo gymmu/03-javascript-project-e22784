@@ -199,3 +199,21 @@ for (let i = 0; i < input.length; i++) {
 //wenn kein "e" vorhanden ist, wird -1 zurückgegeben
   return -1
  }
+
+
+
+ export function aufgabe13 (args) {
+  const input = args
+ 
+  
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  //das gleiche wie Aufgabe 12 einfach, dass esrückwärts ausgelesen werden soll.
+  Array. reverse()
+  if(currentElement === "e")
+  return i
+}
+ 
+return -1
+  
+ }
