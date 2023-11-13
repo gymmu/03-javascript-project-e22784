@@ -146,12 +146,12 @@ result.push(capitalizedElement)
 
 export function aufgabe09 (args)  {
   const input = args
-
+let len = 0
   //schleifendings
   for (let i = 0; i < input.length; i++) {
-    {
+
       //wird bei jedem zeichen 1 addiert. Es wäre auch "len++ "möglich.
-      len === len + 1
+      len = len + 1
     }
     //wenn 6 zeichen gezählt wurden, wird true wiedergegeben, ansonsten immer false.
  if(len === 6){
@@ -159,9 +159,23 @@ export function aufgabe09 (args)  {
  } else {
   return false
  }
-    
-  }
   
-  return result.join("")
  }
 
+
+
+ export function aufgabe11 (args) {
+  const input = args
+  let ascii = null 
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  //muss man halt einfach wissen
+  ascii =currentElement.charCodeAt(0)
+  //nach jedem Zeichen ascii anzeigen nicht erst am Schluss
+  return ascii
+  
+}
+  // wenn es kein ZEichen mehr gibt null zurückgeben, weil der Test es so verlangt
+  return null
+ }
