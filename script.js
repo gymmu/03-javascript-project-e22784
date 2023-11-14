@@ -219,4 +219,25 @@ for (let i = 0; i < input.length; i++) {
  
 return pos
   
+ } 
+
+
+ export function aufgabe14 (args) {
+  const input = args
+  const result = []
+  let count = -1
+  let pos = -1
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if( currentElement === "e"){
+      count++
+      pos = i
+    }
+  }
+  if(count === 2){
+    return pos
+  } else {return count}
+
+  
  }
