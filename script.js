@@ -139,6 +139,22 @@ export function aufgabe06 (args) {
 }
 
 
+export function aufgabe08 (args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if(currentElement === `e`){
+      currentElement = 3
+    }
+
+    
+  }
+  
+  return result.join("")
+}
+
 
 
 
@@ -252,6 +268,13 @@ export function aufgabe15 (args) {
   
   return result.join("")
 }
+
+
+
+
+
+
+
 
 
 //ToDo --> nicht richtig/fertig
