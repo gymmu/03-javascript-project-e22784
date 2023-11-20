@@ -221,7 +221,7 @@ return pos
   
  } 
 
-
+//TODO --> noch nicht fertig
  export function aufgabe14 (args) {
   const input = args
   const result = []
@@ -236,4 +236,19 @@ return 2
  }
 
 
- 
+export function aufgabe15 (args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    //wenn das Element ein Leerschlag ist wird abgebrochen
+    if (currentElement === ` `){
+      return result.join("")
+    }
+    //das Element wird erst hier angehängt, da es kein Leerschlag ist
+    result.push(currentElement)
+  }
+  
+  return result.join("")
+}
