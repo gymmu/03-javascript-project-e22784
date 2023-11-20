@@ -246,7 +246,7 @@ export function aufgabe15 (args) {
     if (currentElement === ` `){
       return result.join("")
     }
-    //das Element wird erst hier angehängt, da es kein Leerschlag ist
+    //das Element wird erst hier angehängt, da es kein Leerschlag ist( Leerschläge dürfen nicht angehängt werden)
     result.push(currentElement)
   }
   
