@@ -225,19 +225,15 @@ return pos
  export function aufgabe14 (args) {
   const input = args
   const result = []
-  let count = -1
-  let pos = -1
   
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if( currentElement === "e"){
-      count++
-      pos = i
-    }
+    //wenn das Zeichen kein "e" ist wird -1 zurückgegeben
+    if(currentElement !== "e"){return -1}
+    else if(currentElement=== "E"){return -1}
   }
-  if(count === 2){
-    return pos
-  } else {return count}
-
-  
+return 2
  }
+
+
+ 
