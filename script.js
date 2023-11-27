@@ -191,16 +191,16 @@ let len = 0
   for (let i = 1; i < input.length; i++) {
     const currentElement = input[i]
     const ascii = currentElement.charCodeAt(0)
-    if(48<= ascii && ascii <= 57){
+    if(48 <= ascii && ascii <= 57){
       //nichts machen,ist eine zahl
-    } else if (65<=ascii && ascii <=70){
+    } else if (65 <=ascii && ascii <= 70){
       //nichts machen ist A-F
     }else {
       return false
     }
     
   }
-  return result.join("")
+  return true
  }
 
 
