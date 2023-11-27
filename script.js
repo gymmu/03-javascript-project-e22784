@@ -356,6 +356,21 @@ export function aufgabe21 (args) {
 }
 
 
+//Aufgabe 27
+//Testen sie, ob eine Eingabe eine Zahl ist.
+
+export function aufgabe27 (args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if(48 <= ascii && ascii <= 57){}
+  }
+  
+  return result.join("")
+}
+
 
 
 
