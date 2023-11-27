@@ -312,6 +312,26 @@ export function aufgabe19 (args) {
 }
 
 
+// Augabe 20
+//Prüfen Sie ob nach jedem `.` ein Leerschlag kommt.
+
+export function aufgabe20 (args) {
+  const input = args
+  const result = []
+ 
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+ //wenn eine Stelle nach dem "." ein Leerschlag kommt, wird true angezeigtS
+  if (currentElement === '.' )  
+  if (input [i+1] === ' ') {
+    return true
+  }
+   
+  }
+ 
+return false
+ 
+}
 
 
 
