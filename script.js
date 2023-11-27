@@ -296,6 +296,32 @@ export function aufgabe15 (args) {
 }
 
 
+export function aufgabe16 (args) {
+  const input = args
+  const result = []
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if(currentElement === "$"){
+
+    }
+  }
+
+
+
+
+  // Erstellen einer leeren Liste
+var liste = [];
+
+// Hinzufügen von Elementen zur Liste
+liste.push("Element 1");
+liste.push("Element 2");
+liste.push("Element 3");
+
+
+  return result.join("")
+}
+
 
 
 
@@ -314,4 +340,26 @@ export function aufgabe21 (args) {
   }
   
   return result.join("")
+}
+
+
+
+
+
+//code Bubble-sort
+//[3,1,2,4]
+//[1,3,2,4]
+//[1,2,3,4]
+
+{const list = [3,1,2,4]
+for (let i = 1; i < list.length; i++) {
+  if(list[i-1]> listm [i]){
+    const tmp = list[i]
+    list[i]= list [i-1]
+    list[i-1]= tmp
+    i=1
+  }
+  
+}
+return list
 }
