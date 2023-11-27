@@ -145,9 +145,13 @@ export function aufgabe08 (args) {
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    //wenn das Element ein "e" ist wird eine "3" zurückgegeben.
     if(currentElement === `e`){
-      delete (CurrentElement)
+     result.push(3)
+    }else {
+      result.push(currentElement)
     }
+    
 
     
   }
