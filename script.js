@@ -355,6 +355,31 @@ export function aufgabe21 (args) {
   return result.join("")
 }
 
+// Aufgabe 26
+//Vergleichen Sie die ersten beiden Zeichen der Eingabe und vertauschen Sie diese
+//so dass Sie alphanumerisch sortiert sind.
+
+ export function aufgabe26 (args) {
+   const list = args.split("")  // ertsellen eine Liste(braucht man um etwas zu sortieren/vergleichen)
+  for (let i = 0; i < list.length - 1; i++) {
+    const currentElement = list[i]
+    const nextElement = list[i+1]
+    //ascii code von den Buchstaben(die buchstaben in zahlen umwandeln um sie nach grösse zu vergleichen)
+    if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+      // Reihenfolge stimmt nicht, Elemente müssen getauscht werden.
+      const tmp = list[i+1]
+      list[i+1] = list[i]
+      list[i] = tmp
+      i = 0 // starte von vorne wenn etwas vertauscht wurde.
+    }
+  }
+  const result = list.join("")
+  return (result)
+ 
+}
+
+
+
 
 //Aufgabe 27
 //Testen sie, ob eine Eingabe eine Zahl ist.
