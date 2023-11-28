@@ -403,6 +403,27 @@ export function aufgabe27 (args) {
 }
 
 
+export function bubbleSort (args) {
+  const list = args.split("") // ertsellen eine Liste(braucht man um etwas zu sortieren/vergleichen)
+   for (let i = 0; i < list.length -1; i++) {
+     const currentElement = list[i]
+     const nextElement = list[i+1]
+     //ascii code von den Buchstaben(die buchstaben in zahlen umwandeln um sie nach grösse zu vergleichen)
+     if ( currentElement.charCodeAt(0) > nextElement.charCodeAt(0)) {
+       // Reihenfolge stimmt nicht, Elemente müssen getauscht werden.
+       const tmp = list[i+1]
+       list[i+1] = list[i]
+       list[i] = tmp
+       i = 0// starte von vorne wenn etwas vertauscht wurde.
+     }
+   }
+   const result = list.join("")
+   return (result)
+  
+ }
+ 
+
+
 
 
 //code Bubble-sort
@@ -412,7 +433,7 @@ export function aufgabe27 (args) {
 
 //{const list = [3,1,2,4]
 //for (let i = 1; i < list.length; i++) {
-  //if(list[i-1]> listm [i]){
+  //if(list[i-1]> list [i]){
     //const tmp = list[i]
     //list[i]= list [i-1]
     //list[i-1]= tmp
