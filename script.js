@@ -361,14 +361,20 @@ export function aufgabe21 (args) {
 
 export function aufgabe27 (args) {
   const input = args
-  const result = []
+  //wenn die länge des Inputs 0 ist wird gerade falsch wiedergegeben, weil es gar keine Zahlen enthalten kann
+  if(input.length === 0) return false
+
 
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    if(48 <= ascii && ascii <= 57){}
+    const ascii = currentElement.charCodeAt(0)
+    //ascii code von zahlen.
+    if(48 <= ascii && ascii <= 57){
+//wenn das nicht der Fall ist wird flasch wiedergegeben.
+    }else return false
   }
-  
-  return result.join("")
+  return true
+
 }
 
 
