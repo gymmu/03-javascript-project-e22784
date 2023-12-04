@@ -414,7 +414,7 @@ export function bubbleSort (args) {
        const tmp = list[i+1]
        list[i+1] = list[i]
        list[i] = tmp
-       i = 0// starte von vorne wenn etwas vertauscht wurde.
+       i = -1// starte von vorne wenn etwas vertauscht wurde.-1 weil vorhin +1 gemacht wurde.Sonst würde ein Buchstabe von vorne nie nach hinten schaffen würde.
      }
    }
    const result = list.join("")
