@@ -312,7 +312,9 @@ export function aufgabe16(args) {
 }
 return result.join('')
 }
- 
+//Aufgabe 17
+//Lesen Sie die Eingabe als Liste ein, Einträge in der Liste werden von einem ','
+//getrennt.
 export function aufgabe17(args) {
   const input = args;
   const result = input.split(',')
@@ -402,11 +404,13 @@ export function aufgabe22 (args) {
   
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
+    //wenn das element alles ausser ein k ist wird _ wieder gegeben.
     if(currentElement!== "k"){
       result.push(_)
+      //wenn ein k kommt wird einfach das element wieder gegeben.
     }else if(currentElement=== "k"){
       return currentElement
-    }
+    } 
    
   }
   
