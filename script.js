@@ -355,6 +355,19 @@ export function aufgabe21 (args) {
   return result.join("")
 }
 
+//Aufgabe 22
+//Es sollen alle Zeichen aus der Eingabe mit `_` ersetzt werden, bis zum ersten
+//`k`.
+
+export function aufgabe22 (args) {
+  const input = args
+  const result = []
+  
+  return result.join("")
+}
+
+
+
 // Aufgabe 26
 //Vergleichen Sie die ersten beiden Zeichen der Eingabe und vertauschen Sie diese
 //so dass Sie alphanumerisch sortiert sind.
