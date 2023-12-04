@@ -295,6 +295,43 @@ export function aufgabe15 (args) {
   return result.join("")
 }
 
+// Aufgabe 16
+//Lesen Sie die Eingabe bis zum Zeichen '$' als ersten Teil einer Liste ein, und
+//den Rest als den zweiten Teil.
+
+export function aufgabe16(args) {
+  const input = args
+  const result = []
+ 
+  for (let i= 0; i < input.length; i++) {
+    const currentElement = input [i];
+    if (currentElement === '$'){
+      break;
+    }
+    result.push(currentElement);
+}
+return result.join('')
+}
+ 
+export function aufgabe17(args) {
+  const input = args;
+  const result = input.split(',')
+ 
+ 
+  for (let i = 0; i < result.length - 1; i++) {
+    for (let j = 0; j < result.length - 1 - i; j++) {
+      if (result[j] > result[j + 1]) {
+       
+        [result[j], result[j + 1]] = [result[j + 1], result[j]]
+      }
+    }
+  }
+ 
+  return result.join(',')
+}
+
+
+
 // Aufgabe 19
 //Jedes Zeichen in der Eingabe soll verdoppelt werden.
 
@@ -362,6 +399,16 @@ export function aufgabe21 (args) {
 export function aufgabe22 (args) {
   const input = args
   const result = []
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    if(currentElement!== "k"){
+      result.push(_)
+    }else if(currentElement=== "k"){
+      return currentElement
+    }
+   
+  }
   
   return result.join("")
 }
