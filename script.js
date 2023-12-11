@@ -121,7 +121,7 @@ export function aufgabe05 (args) {
 }
 
 
-//TODO --> es funktioniert nicht!!!
+//TODO --> es funktioniert nicht!
 export function aufgabe06 (args) {
   const input = args
   const result = []
