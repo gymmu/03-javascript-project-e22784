@@ -339,6 +339,23 @@ export function aufgabe17(args) {
   return result.join(',')
 }
 
+//Aufgabe 18
+//Schreiben Sie folgende Ausgabe: Sie heissen `name` und sind `alter` Jahre alt,
+//wobei `name` und `alter` durch Eingaben eingesetzt werden.
+
+export function aufgabe18 (args) {
+  const input = args
+  const result = input.split(',')
+  
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    
+  }
+  return result.join("")
+}
+
+
+
 
 
 // Aufgabe 19
