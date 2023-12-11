@@ -120,23 +120,33 @@ export function aufgabe05 (args) {
 
 }
 
-//TODO ---> es funktioniert nicht
+
 export function aufgabe06 (args) {
   const input = args
-  const result = []
-  
-  for (let i = 0; i < input.length; i++) {
+   
+  for (let i = 1; i < input.length; i++) {
     const currentElement = input[i]
     //das Element in einen ascii code umwandeln
-    currentElement = currentElement.charCodeAt(0)
-    //wenn der ascii code dem eines Sonderzeichen entspricht, wird true wiedergegeben.(< zeichen rausgenommen weil es als Fehler markiert ist.)
-    if (currentElement.charCodeAt(0) === 33 >62 )
-    return true
-   }
-  
-
+    const ascii = currentElement.charCodeAt(0)
+    if (48 <= ascii && ascii <= 57){
+      //passiert nichts(ist kein Sonderzeichen)
+   
+    } else if (65 <= ascii && ascii <= 90) {
+      //wird nichts gemacht(wieder kein Sonderzeichen)
+   
+   
+    } else if (97 <= ascii && ascii <= 122) {
+      // passiert nichts (ist kein Sonderzeichen)
+   
+    } else if (currentElement === " ") {
+   //macht nichts wenn es ein leerschlag ist
+    } else {
+      //es bleiben nur noch Sonderzeichen übrig(alles andere wurde ausgeschlossen)es wird true zurückgegeb
+      return true
+    }
+  }
   return false
-}
+  }
 
 
 export function aufgabe08 (args) {
@@ -220,7 +230,7 @@ for (let i = 0; i < input.length; i++) {
   return ascii
   
 }
-  // wenn es kein ZEichen mehr gibt null zurückgeben, weil der Test es so verlangt
+  // wenn es kein Zeichen mehr gibt null zurückgeben, weil der Test es so verlangt
   return null
  }
 
@@ -321,13 +331,10 @@ export function aufgabe17(args) {
  
  
   for (let i = 0; i < result.length - 1; i++) {
-    for (let j = 0; j < result.length - 1 - i; j++) {
-      if (result[j] > result[j + 1]) {
-       
-        [result[j], result[j + 1]] = [result[j + 1], result[j]]
+    const currentElement = input[i]
       }
-    }
-  }
+    
+ 
  
   return result.join(',')
 }
@@ -380,7 +387,8 @@ return false
 
 
 
-
+// Aufgabe 21
+//Kehren Sie die Eingabe um.
 //ToDo --> nicht richtig/fertig
 export function aufgabe21 (args) {
   const input = args
