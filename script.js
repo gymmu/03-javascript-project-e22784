@@ -460,11 +460,11 @@ export function aufgabe22 (args) {
 export function aufgabe24 (args) {
   const input = args
   const result = []
- 
+ //wenn nur ein Element vorhanden ist wird es direkt zurückgegeben
   if (input.length === 1) return input
   const firstElem=input[0]
   const lastElem=input[input.length-1]
- 
+ //am Anfang das letze dann die Schleife und dann das erste Element
   result.push(lastElem)
   for (let i = 1; i < input.length -1; i++) {
     const currentElement = input[i]
