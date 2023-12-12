@@ -363,6 +363,7 @@ export function aufgabe18 (args) {
  
   phrases.push(currentPhrase.join(""))
   return "Sie heissen " + phrases[0] + " und sind " + phrases[1] + " Jahre alt"
+  //satz wiedergeben mit phrases 0 + 1
  
 }
  
