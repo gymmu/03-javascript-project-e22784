@@ -104,9 +104,8 @@ export function aufgabe05 (args) {
  else if(currentElement === currentElement.toUpperCase()) {
   capitalLetters++
  }
-//TODO --> es funktioniert nicht!!!
- else if( currentElement !== currentElement.toLowerCase()) {
-  capitalLetters ++
+ const ascii = currentElement.charCodeAt(0)
+ if(currentElement === 0){
  }
 
 
@@ -342,19 +341,30 @@ export function aufgabe17(args) {
 //Aufgabe 18
 //Schreiben Sie folgende Ausgabe: Sie heissen `name` und sind `alter` Jahre alt,
 //wobei `name` und `alter` durch Eingaben eingesetzt werden.
-
+ 
 export function aufgabe18 (args) {
   const input = args
-  const result = input.split(',')
-  
+  const phrases = []
+ 
+  let currentPhrase = []
   for (let i = 0; i < input.length; i++) {
     const currentElement = input[i]
-    
+ 
+    if (currentElement === ' ') {
+      // Wenn wir hier sind haben wir einen '.' --> den aktuellen Satz als eine Element in phrases speichern
+      phrases.push(currentPhrase.join(""))
+      currentPhrase = []  //alle slöschen was im sAtz ist
+    } else {
+      // Wenn wir keinen '.' lesen, dann möchten wir die Zeichen an den aktuellen Satz anhängen.
+      currentPhrase.push(currentElement)
+    }
   }
-  return result.join("")
+ 
+  phrases.push(currentPhrase.join(""))
+  return "Sie heissen " + phrases[0] + " und sind " + phrases[1] + " Jahre alt"
+ 
 }
-
-
+ 
 
 
 
@@ -441,6 +451,42 @@ export function aufgabe22 (args) {
   
   return result.join("")
 }
+
+export function aufgabe25 (args) {
+  const input = args
+  const result = []
+
+// den Rest ausrechnen. Prüft ob der Input.length gerade ist
+  if(input.length % 2 === 0){
+    //-1 weil das erste Element eigentlich 0 wäre
+const pos = input.length / 2 - 1
+
+for (let i = 0; i < input.length; i++) {
+  const currentElement = input[i]
+  //wenn es ungerade ist. das abgerundete mittlere element + das nächste kommenede Element.
+  if(i === pos || i=== pos + 1){
+    //do nothing(auch nicht zurückgeben)
+  }else {
+    result.push(currentElement)
+  }
+}
+  } else {
+//teilt das input.length in zwei teile.und es wird abgerundet wenn es ungerade ist
+  const pos = Math.floor(input.length / 2)
+
+  for (let i = 0; i < input.length; i++) {
+    const currentElement = input[i]
+    // pos ist die mittlere position weil man es durh 2 geteilt hat
+    if (i === pos){
+//nichts machen
+    }else {
+     result.push(currentElement) 
+    }
+  }
+  }
+  return result.join("")
+}
+
 
 
 
