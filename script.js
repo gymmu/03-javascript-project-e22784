@@ -445,13 +445,15 @@ export function aufgabe22 (args) {
       result.push(_)
       //wenn ein k kommt wird einfach das element wieder gegeben.
     }else if(currentElement=== "k"){
-      return currentElement
+      result.push(currentElement) 
     } 
    
   }
   
   return result.join("")
 }
+
+
 
 export function aufgabe25 (args) {
   const input = args
