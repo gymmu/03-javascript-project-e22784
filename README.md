@@ -87,9 +87,7 @@ Jedes Zeichen in der Eingabe soll verdoppelt werden.
 
 Prüfen Sie ob nach jedem `.` ein Leerschlag kommt.
 
-## Aufgabe 21
-
-Kehren Sie die Eingabe um.
+ 
 
 ## Aufgabe 22
 
